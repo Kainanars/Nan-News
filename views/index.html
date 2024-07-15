@@ -1,40 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/public/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+<html>
 <body>
-    <header>
-        <div class="center">
-            <div class="logo">
-                <h2><span style="font-weight: lighter;">Nan</span><b>New's</b></h2>
-            </div>
-            <div class="form-busca">
-                <form action="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input name="busca" type="text" placeholder="Busca...">
-                </form>
-            </div>
-        </div>
-    </header>
+    <%- include('partials/header.html')%>
+
     <section class="noticia-destaque">
         <div class="center">
             <div class="img-destaque">
                 <div class="overlay-destaque"></div>
                 <div class="title-destaque-descricao">
                     <h1>Testando o h2</h1>
-                    <p>Lorem ipsum dolor sit amet. Et omnis dolor sed quia expedita ea perspiciatis possimus. Ut perferendis blanditiis non minus nihil ut autem numquam quo obcaecati rerum non aperiam numquam.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet. Et omnis dolor sed quia expedita ea perspiciatis possimus.</p>
                 </div>
                 <img src="/public/images/landscape.jfif">
             </div>
         </div>
     </section>
+
+    <section class="outras-noticias">
+        <div class="title-outras-noticias">
+            <h2>Ultimas noticias</h2>
+            <br><br>
+            <div class="center">
+                <div class="ultimas">
+                    <div class="box-ultima-single">
+                        <img src="/public/images/IMAGEM2.png">
+                        <div class="conteudo-noticia-single">
+                            <h3>DICA DE AVENTURA</h3>
+                            <h2>Como encarar o surf mesmo no frio</h2>
+                            <p>A água gelada e o vento pode acabar com a sua felicidade de ir para a água. Cientistas afirmam que a chance de hipotermia é real e você precisa se cuidar. Veja como.</p>
+                            <a href="/saiba-mais">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="box-ultima-single">
+                        <img src="/public/images/IMAGEM2.png">
+                        <div class="conteudo-noticia-single">
+                            <h3>DICA DE AVENTURA</h3>
+                            <h2>Como encarar o surf mesmo no frio</h2>
+                            <p>A água gelada e o vento pode acabar com a sua felicidade de ir para a água. Cientistas afirmam que a chance de hipotermia é real e você precisa se cuidar. Veja como.</p>
+                            <a href="/saiba-mais">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mais-lidas">
+                    <h3>Mais lidas</h3>
+                    <div class="mais-lidas-noticias">
+                        <div class="mais-lidas-noticias-single">
+                            <img src="/public/images/NATUREZA1@2x.png">
+                            <div class="texto-mais-lidas-single">
+                                <h4>Natureza</h4>
+                                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+                                <a href="/saiba-mais">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="mais-lidas-noticias-single">
+                            <img src="/public/images/NATUREZA1@2x.png">
+                            <div class="texto-mais-lidas-single">
+                                <h4>Natureza</h4>
+                                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+                                <a href="/saiba-mais">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="mais-lidas-noticias-single">
+                            <img src="/public/images/NATUREZA1@2x.png">
+                            <div class="texto-mais-lidas-single">
+                                <h4>Natureza</h4>
+                                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+                                <a href="/saiba-mais">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="mais-lidas-noticias-single">
+                            <img src="/public/images/NATUREZA1@2x.png">
+                            <div class="texto-mais-lidas-single">
+                                <h4>Natureza</h4>
+                                <p>A importância da floresta do ártico para a biodiversidade mundial. Qual o impacto o degelo na fauna e flora?</p>
+                                <a href="/saiba-mais">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer.html')%>
 </body>
 </html>
