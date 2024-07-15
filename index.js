@@ -27,16 +27,16 @@ app.get('/', (req, res) => {
     const busca = req.query.busca;
 
     if (!busca) {
-        res.render('index');
+        res.render('index',{});
     } else {
-        res.send(`Você buscou: ${busca}`);
+        res.render('busca',{});
     }
 });
 
 
 // Slug texto amigavel, invés de usar id
 app.get('/:slug', (req, res) => {
-    req.res(req.params.slug);
+    res.render('single',{});
 })
 
 // Start servidor
